@@ -7,12 +7,12 @@ export function SpecializedServices() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
       <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        <Reveal className="relative order-2 h-80 overflow-hidden rounded-3xl lg:order-1 lg:h-[30rem]">
+        <Reveal className="relative order-2 h-80 overflow-hidden rounded-3xl bg-ink-100 lg:order-1 lg:h-[30rem]">
           <Image
             src="/images/facade-glass-exterior.jpg"
             alt="IWFM rope-access facade and glass cleaning"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(min-width: 1024px) 45vw, 100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-transparent" />

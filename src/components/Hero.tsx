@@ -77,8 +77,8 @@ export function Hero() {
             className="relative mt-8 h-44 overflow-hidden rounded-2xl sm:hidden"
           >
             <Image
-              src="/images/team-ac-vent.jpg"
-              alt="IWFM technician servicing a ceiling AC vent"
+              src="/images/team-hero-group.jpg"
+              alt="IWFM facility management team on site with cleaning equipment"
               fill
               className="object-cover"
               sizes="90vw"
@@ -97,8 +97,8 @@ export function Hero() {
 
           <div className="absolute inset-y-0 right-0 w-[76%] overflow-hidden rounded-[1.75rem] shadow-2xl ring-1 ring-white/10">
             <Image
-              src="/images/team-ac-vent.jpg"
-              alt="IWFM technician servicing a ceiling AC vent"
+              src="/images/team-hero-group.jpg"
+              alt="IWFM facility management team on site with cleaning equipment"
               fill
               priority
               className="object-cover"

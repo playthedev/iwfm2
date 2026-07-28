@@ -29,7 +29,7 @@ export function TechQuality() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="relative h-full min-h-[22rem] overflow-hidden rounded-3xl">
+          <div className="relative h-full min-h-[28rem] overflow-hidden rounded-3xl">
             <Image
               src="/images/team-ceiling-light.jpg"
               alt="IWFM staff following quality control procedures on site"

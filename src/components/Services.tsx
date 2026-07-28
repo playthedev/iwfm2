@@ -22,12 +22,12 @@ export function Services() {
         {services.map((service, i) => (
           <Reveal key={service.title} delay={(i % 4) * 0.08}>
             <article className="group h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-brand-100 transition-all hover:-translate-y-1.5 hover:shadow-xl hover:shadow-brand-200/40">
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-44 overflow-hidden bg-ink-100">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-contain transition-transform duration-500 group-hover:scale-110"
                   sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/50 to-transparent" />

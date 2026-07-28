@@ -52,22 +52,22 @@ export const services = [
   {
     title: "Deep Cleaning & Pre-Handover Cleaning",
     description: "Residential & Commercial building deep cleaning and pre-handover cleaning services.",
-    image: "/images/deep-cleaning-site.jpg",
+    image: "/images/deep-cleaning-collage.jpg",
   },
   {
     title: "Sanitization & Pest Control Services",
     description: "Complete sanitization and pest control services for a safe, healthy environment.",
-    image: "/images/pest-control-1.jpg",
+    image: "/images/sanitization-pest-control.jpg",
   },
   {
     title: "Sofa, Chairs & Carpet Shampoo",
     description: "Professional shampooing for upholstery, chairs and carpets.",
-    image: "/images/sofa-shampoo.jpg",
+    image: "/images/carpet-shampoo-2.jpg",
   },
   {
     title: "Executive Housekeeping & Pantry Services",
     description: "Specialized executive housekeeping and pantry management services.",
-    image: "/images/housekeeping-1.jpg",
+    image: "/images/housekeeping-pantry.jpg",
   },
   {
     title: "Facade & Glass Cleaning",
@@ -82,17 +82,17 @@ export const services = [
   {
     title: "Technical Maintenance Services",
     description: "Technical upkeep and maintenance for commercial and residential facilities.",
-    image: "/images/team-ceiling-light.jpg",
+    image: "/images/technical-maintenance.jpg",
   },
   {
     title: "Support Staff Services",
     description: "Reliable, trained support staff deployed across client sites.",
-    image: "/images/team-hallway-mop.jpg",
+    image: "/images/support-services.jpg",
   },
   {
     title: "Gardening & Horticulture",
     description: "Upkeep of green spaces, gardens and horticulture for your premises.",
-    image: "/images/team-table-wipe.jpg",
+    image: "/images/gardening-horticulture.jpg",
   },
   {
     title: "Training & Development",
@@ -215,10 +215,26 @@ export const advantages = [
 ];
 
 export const gallery = [
+  { src: "/images/team-hero-group.jpg", alt: "IWFM facility management team on site with cleaning equipment" },
   { src: "/images/deep-cleaning-team.jpg", alt: "IWFM deep cleaning team with equipment" },
+  { src: "/images/deep-cleaning-collage.jpg", alt: "IWFM deep cleaning team at work across a commercial site" },
+  { src: "/images/deep-cleaning-site.jpg", alt: "IWFM deep cleaning site preparation" },
   { src: "/images/facade-glass-interior.jpg", alt: "IWFM staff cleaning interior glass doors" },
+  { src: "/images/facade-glass-exterior.jpg", alt: "IWFM rope-access facade and glass cleaning" },
   { src: "/images/carpet-shampoo.jpg", alt: "IWFM staff shampooing an office carpet" },
+  { src: "/images/carpet-shampoo-2.jpg", alt: "IWFM staff shampooing carpet in an office" },
+  { src: "/images/sofa-shampoo.jpg", alt: "IWFM staff shampooing a sofa" },
   { src: "/images/pest-control-1.jpg", alt: "IWFM staff performing pest control treatment" },
+  { src: "/images/sanitization-pest-control.jpg", alt: "IWFM staff performing sanitization and pest control" },
   { src: "/images/wood-floor-polish.jpg", alt: "IWFM staff polishing a wooden floor" },
   { src: "/images/housekeeping-1.jpg", alt: "IWFM staff performing daily housekeeping tasks" },
+  { src: "/images/housekeeping-pantry.jpg", alt: "IWFM housekeeping and pantry service staff" },
+  { src: "/images/gardening-horticulture.jpg", alt: "IWFM staff maintaining gardens and landscaping" },
+  { src: "/images/support-services.jpg", alt: "IWFM support services staff at reception" },
+  { src: "/images/technical-maintenance.jpg", alt: "IWFM technician performing technical maintenance" },
+  { src: "/images/team-ac-vent.jpg", alt: "IWFM technician servicing a ceiling AC vent" },
+  { src: "/images/team-ceiling-light.jpg", alt: "IWFM staff cleaning a ceiling light fixture" },
+  { src: "/images/team-floor-scrub.jpg", alt: "IWFM staff operating a floor scrubbing machine" },
+  { src: "/images/team-hallway-mop.jpg", alt: "IWFM staff mopping an office hallway" },
+  { src: "/images/team-table-wipe.jpg", alt: "IWFM staff wiping down an office table" },
 ];

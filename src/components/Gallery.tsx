@@ -22,7 +22,7 @@ export function Gallery() {
             className={i === 0 ? "col-span-2 md:col-span-1 md:row-span-2" : ""}
           >
             <div
-              className={`group relative w-full overflow-hidden rounded-2xl ${
+              className={`group relative w-full overflow-hidden rounded-2xl bg-ink-100 ${
                 i === 0 ? "aspect-[4/5] md:h-full" : "aspect-square"
               }`}
             >
@@ -30,7 +30,7 @@ export function Gallery() {
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-contain transition-transform duration-500 group-hover:scale-110"
                 sizes="(min-width: 768px) 33vw, 50vw"
               />
               <div className="absolute inset-0 bg-ink-900/0 transition-colors duration-300 group-hover:bg-ink-900/20" />
