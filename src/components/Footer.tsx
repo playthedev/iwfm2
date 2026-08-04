@@ -1,12 +1,18 @@
+import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { company } from "@/lib/content";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
+];
+
+const LEGAL_LINKS = [
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export function Footer() {
@@ -31,12 +37,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-white/60 transition-colors hover:text-brand-400"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -69,10 +75,24 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="py-6 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} IWFM — I Work Facility Management. All
-          Rights Reserved.
-        </p>
+        <div className="flex flex-col items-center gap-3 pb-24 pt-6 text-center sm:flex-row sm:justify-between sm:pb-6 sm:pr-24 sm:text-left">
+          <p className="text-xs text-white/40">
+            © {new Date().getFullYear()} IWFM — I Work Facility Management.
+            All Rights Reserved.
+          </p>
+          <ul className="flex items-center gap-5">
+            {LEGAL_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-xs text-white/40 transition-colors hover:text-brand-400"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );

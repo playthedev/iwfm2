@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import { company } from "@/lib/content";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
@@ -32,21 +33,21 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-        <a href="#home" className="flex items-center gap-2">
+        <Link href="/#home" className="flex items-center gap-2">
           <span className="font-display text-2xl font-extrabold tracking-tight text-ink-900">
             <span className="text-brand-500">I</span>WFM
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-ink-700 transition-colors hover:text-brand-600"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -58,12 +59,12 @@ export function Navbar() {
             <Phone className="h-4 w-4 text-brand-500" />
             {company.phone}
           </a>
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-brand-500/30 transition-all hover:bg-brand-600 hover:shadow-md hover:shadow-brand-500/40"
           >
             Get a Quote
-          </a>
+          </Link>
         </div>
 
         <button
@@ -79,22 +80,22 @@ export function Navbar() {
         <div className="border-t border-brand-100 bg-cream px-5 pb-6 pt-2 lg:hidden">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink-700 hover:bg-brand-50 hover:text-brand-600"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-brand-500 px-5 py-3 text-center text-sm font-semibold text-white"
             >
               Get a Quote
-            </a>
+            </Link>
           </nav>
         </div>
       )}
