@@ -97,7 +97,7 @@ export const services = [
   {
     title: "Training & Development",
     description: "Ongoing training and development programs to keep our workforce sharp.",
-    image: "/images/team-ac-vent.jpg",
+    image: "/images/team-training-session.jpg",
   },
 ];
 

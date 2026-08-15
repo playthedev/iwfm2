@@ -76,10 +76,23 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-3 pb-24 pt-6 text-center sm:flex-row sm:justify-between sm:pb-6 sm:pr-24 sm:text-left">
-          <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} IWFM — I Work Facility Management.
-            All Rights Reserved.
-          </p>
+          <div className="text-xs text-white/40">
+            <p>
+              © {new Date().getFullYear()} IWFM — I Work Facility Management.
+              All Rights Reserved.
+            </p>
+            <p className="mt-1">
+              Built by{" "}
+              <a
+                href="https://www.nexmogen.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/50 transition-colors hover:text-brand-400"
+              >
+                Nexmogen
+              </a>
+            </p>
+          </div>
           <ul className="flex items-center gap-5">
             {LEGAL_LINKS.map((link) => (
               <li key={link.href}>
