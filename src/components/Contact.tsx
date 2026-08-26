@@ -1,6 +1,9 @@
+"use client";
+
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { company } from "@/lib/content";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 export function Contact() {
   return (
@@ -67,6 +70,7 @@ export function Contact() {
             href={company.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppConversion}
             className="flex items-center gap-2 rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition-all hover:scale-[1.03] hover:bg-brand-600"
           >
             <MessageCircle className="h-4 w-4" />
