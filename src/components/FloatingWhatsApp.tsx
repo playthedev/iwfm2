@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { company } from "@/lib/content";
+import { trackWhatsAppConversion } from "@/lib/gtag";
 
 export function FloatingWhatsApp() {
   return (
@@ -10,6 +11,7 @@ export function FloatingWhatsApp() {
       href={company.whatsappHref}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={trackWhatsAppConversion}
       aria-label="Chat with IWFM on WhatsApp"
       initial={{ opacity: 0, scale: 0.6, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
